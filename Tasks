@@ -1,0 +1,24 @@
+Kanban.txt
+
+1-A fazer 
+Fazer e funcionar o main, com service e model
+Crir em arquivos txt coisas funcionais
+Implementar interface com polismorfismo real 
+Fazetr a criptografia funcional
+Validar leitura/escrita em depesas/data .txt
+
+
+2-Em progresso 
+Estruturação de Poo (herança e sobrecarga)
+Adaptação de try/catch e l.ogs simples para estes serviços
+
+3-Revisar 
+Validar a lietura e persistencia dos arquivos 
+Testar fluxo de meu completo (navegção e funcionamento dos mesmo)
+
+
+5-Concluído
+Tarefas das estruturas completa
+Planejamento Poc feito e definido 
+Porgram a feito 
+
