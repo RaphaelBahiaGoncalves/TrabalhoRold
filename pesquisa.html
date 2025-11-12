@@ -1,20 +1,51 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <title> Pesquisando Cadastros pelo Sexo </title>
+    <meta charset="UTF-8">
+    <title>Pesquisa por Sexo</title>
 </head>
-
 <body>
-    <h3>Pesquisa</h3><br>
-    <form name="Cadastro" action="pesquisa-resultado.php" method="POST">
-        <label>Selecione o Sexo do Cliente:</label>
-        <select name="Sexo">
+
+<div class="container">
+    <h1>Pesquisar Cadastros por Sexo</h1>
+    <p style="text-align:center; color:#666;">Dados salvos em <code>cadastros.txt</code></p>
+
+    <!-- FORMULÁRIO -->
+    <form method="POST">
+        <select name="Sexo" required>
+            <option value="">-- Escolha o sexo --</option>
             <option value="M">Masculino</option>
             <option value="F">Feminino</option>
-            <option value="N">Não Declarado</option>
-        </select><br>
-        <input type="submit" name="enviar" value="Enviar">
+        </select>
+        <button type="submit">Pesquisar</button>
     </form>
-</body>
 
+    <!-- RESULTADOS -->
+    <h2>Resultados: <strong>Masculino</strong></h2>
+
+    <table>
+        <tr>
+            <th>NOME</th>
+            <th>SOBRENOME</th>
+            <th>SEXO</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>Silva</td>
+            <td>Masculino</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>Oliveira</td>
+            <td>Masculino</td>
+        </tr>
+    </table>
+
+    <div class="info">
+        <strong>Dica:</strong> Edite <code>cadastros.txt</code> na mesma pasta para adicionar/remover pessoas.<br>
+        Formato: <code>id|nome|sobrenome|M ou F</code>
+    </div>
+</div>
+
+</body>
 </html>
